@@ -1,4 +1,4 @@
-import { sayHello } from '@your-org/core-lib';
+import { sayHello, foo } from '@your-org/core-lib';
 import { AsyncMessage, Message } from '@your-org/ui-lib';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
@@ -21,6 +21,7 @@ export const DemoPage: FC = () => {
       <MainLayout>
         <Banner />
         <h3>I'm the web-app</h3>
+        <button onClick={() => foo()}>Foo</button>
         <Jumbotron />
         <ul>
           <li>{`Foo says: ${sayHello('World')} from @your-org/core-lib`}</li>

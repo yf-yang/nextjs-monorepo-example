@@ -11,7 +11,8 @@
     "incremental": true,
     "paths": {
       "@/test-utils": ["../config/test/test-utils"],
-      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"]
+      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"],
+      "@/*": ["./*"]
     },
     "types": ["jest", "vitest/globals"]
   },
